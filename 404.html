@@ -38,6 +38,14 @@ path {
 }
 
 </style>
+<form>
+  <input type="radio" name="reference" id="ref-annulus">
+  <label for="ref-annulus">Annulus</label><br>
+  <input type="radio" name="reference" id="ref-planet" checked>
+  <label for="ref-planet">Planets</label><br>
+  <input type="radio" name="reference" id="ref-sun">
+  <label for="ref-sun">Sun</label>
+</form>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
 
@@ -56,7 +64,8 @@ var svg = d3.select("body").append("svg")
     .attr("height", height)
   .append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(.55)")
-  .append("g");
+  .append("g")
+  .append("style","display: block, margin: auto");
 
 var frame = svg.append("g")
     .datum({radius: Infinity});
