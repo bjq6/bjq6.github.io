@@ -2,8 +2,8 @@
 permalink: /404.html
 ---
 
-<!DOCTYPE html>
-<meta charset="utf-8">
+Oh no! You've found the inner workings of my pages! Don't look! 
+
 <style>
 
 body {
@@ -64,8 +64,7 @@ var svg = d3.select("body").append("svg")
     .attr("height", height)
   .append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(.55)")
-  .append("g")
-  .append("style","display: block, margin: auto");
+  .append("g");
 
 var frame = svg.append("g")
     .datum({radius: Infinity});
