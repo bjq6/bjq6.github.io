@@ -87,6 +87,10 @@ footer {
 .portfolio-modal .modal-content img {
   margin-bottom: 30px;
 }
+.portfolio-modal .modal-content .project-title img{
+  display:block;
+  margin:auto;
+}
 .portfolio-modal .modal-content .item-details {
   margin: 30px 0;
 }
